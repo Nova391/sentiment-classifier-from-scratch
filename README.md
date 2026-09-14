@@ -1,6 +1,6 @@
 # Sentiment Classifier From Scratch
 
-A simple binary sentiment classifier built entirely from scratch in Python without using machine-learning libraries.
+A simple binary sentiment classifier built from scratch in Python without using machine-learning libraries.
 
 ## What This Project Does
 
@@ -74,18 +74,48 @@ The project uses only Python's built-in `math` module.
 python sentiment_classifier.py
 ```
 
-## Important Limitation
+## Important Limitations
 
 This is an educational project with a very small dataset.
 
-The model is designed to demonstrate how a text classifier works internally rather than provide reliable real-world sentiment analysis.
+The model demonstrates the internal mechanics of a text classifier rather than providing reliable real-world sentiment analysis.
 
-The test set also contains words that do not appear in the training set, which makes the evaluation intentionally limited.
+The test set is also very small, and some test words do not appear in the training vocabulary, so the reported accuracy should not be treated as a meaningful benchmark.
 
 ## Why I Built It
 
-This project was built to understand machine learning fundamentals by implementing the core training process manually instead of relying on libraries such as scikit-learn, PyTorch, or TensorFlow.
+I built this project to understand machine-learning fundamentals by implementing the core training process manually instead of relying on libraries such as scikit-learn, PyTorch, or TensorFlow.
+
+## What I Learned
+
+Through this project I implemented and explored the complete basic workflow of a machine-learning classifier:
+
+```text
+Data
+↓
+Representation
+↓
+Model
+↓
+Prediction
+↓
+Loss
+↓
+Gradients
+↓
+Parameter Updates
+↓
+Training
+↓
+Testing
+```
 
 ## Next Step
 
 The next stage of my AI learning is to build a neural network from scratch and implement neurons, layers, forward propagation, backpropagation, and training.
+
+## README Note
+
+This README was drafted with assistance from OpenAI's ChatGPT.
+
+The project code and implementation were written and developed by me as part of my AI learning process.
